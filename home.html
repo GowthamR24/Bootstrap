@@ -1,0 +1,523 @@
+	<!DOCTYPE html>
+	<html>
+	<!--Document header starts-->
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+	</head>
+	<!--Document header ends-->
+	<body class="container-fluid">
+	<!--Navigation bar contains brand name and navigation links -->
+		<nav class="navbar navbar-default navbar-fixed-top" >
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<!--Button for collapsed navbar-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">DigiZONE</a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Laptops <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Apple</a></li>
+								<li><a href="#">HP</a></li>
+								<li><a href="#">DELL</a></li>
+								<li><a href="#">Lenovo</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mobiles <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Apple</a></li>
+								<li><a href="#">Samsung</a></li>
+								<li><a href="#">Moto</a></li>
+								<li><a href="#">HTC</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Others</a></li>
+							</ul>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tablets <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Apple</a></li>
+									<li><a href="#">Asus</a></li>
+									<li><a href="#">Micromax</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Others</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accessories <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Chargers</a></li>
+									<li><a href="#">Ear Phones</a></li>
+									<li><a href="#">Speakers</a></li>
+									<li><a href="#">Power Banks</a></li>
+									<li><a href="#">Screen Guards</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Others</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form pull-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Search</button>
+						</form>
+						<ul  class="nav navbar-nav pull-right">
+							<li>
+								<a href="#myModal" type="button" data-toggle="modal"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sign In </a>
+							</li>
+						</ul> 
+					</div>
+				</div>
+			</nav>
+			<!--Navigation bar ends-->
+
+			<!--Modal for Sign in pop up starts-->
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">SIGN IN</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-lg-4 control-label" for="username">USER NAME</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="username" type="text">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-4 control-label" for="password">PASSWORD</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="password" type="text">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<a href="#myModalSign" type="button" data-toggle="modal" class="pull-left">NEW USER? SIGN UP</a>
+							<button class="btn btn-primary" type="button">SIGN IN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Sign in Modal ends-->
+
+			<!--Modal for Create Account starts-->
+			<div class="modal fade" id="myModalSign">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">SIGN IN</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-lg-4 control-label" for="username">FIRST NAME</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="username" type="text">
+									</div>
+									<label class="col-lg-4 control-label" for="lastname">LAST NAME</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="lastname" type="text">
+									</div>
+									<label class="col-lg-4 control-label" for="email">E-MAIL</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="email" type="text">
+									</div>
+									<label class="col-lg-4 control-label" for="pwd">PASSWORD</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="pwd" type="text">
+									</div>
+									<label class="col-lg-4 control-label" for="rpassword">CONFIRM PASSWORD</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="rpassword" type="text">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary" type="button">Create Account</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Create Account Modal ends-->
+
+			<!--Carousel section for image slide show starts-->
+			<div class="carousel " id="mySlide">
+				<div class="carousel-inner">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#mySlide"></li>
+						<li data-slide-to="1" data-target="#mySlide"></li>
+						<li data-slide-to="2 " data-target="#mySlide"></li>
+						<li data-slide-to="3" data-target="#mySlide"></li>
+						<li data-slide-to="4" data-target="#mySlide"></li>
+					</ol>
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>iPhone 7</h4>
+							<p>Experience the new iPhone 7</p>
+						</div>
+					</div>
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>AlienWare</h4>
+							<p>Unleash your Gaming with DELL AlienWare</p>
+						</div>
+					</div>
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>MOTO Z</h4>
+							<p>Ultimate Battery.Unlimited Possibilities.</p>
+						</div>
+					</div>
+					<div class="item" id="slide4">
+						<div class="carousel-caption">
+							<h4>JBL Speaker</h4>
+							<p>Just be loud with JBL</p>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" data-slide="prev" href="#mySlide"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#mySlide"><span class="icon-next"></span></a>
+			</div>
+			<!--Carousel section ends-->
+
+			<!--Row starts for thumbnail display-->
+			<div class="row ">
+				<div class="col-lg-2 col-sm-6 col-md-4" id="deal">
+					<div class="thumbnail">
+						<div class="caption">
+							<center><p>Deals <br>of <br>the<br> day</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">View All</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/d1.jpeg" alt="deal1">
+						<div class="caption">
+							<center><h3>Zenfone 3</h3></center>
+							<center><p>40% Cashback</p></center>
+							<center><a href="html/Product.html" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/d2.jpg" alt="deal2">
+						<div class="caption">
+							<center><h3>HP Laptops</h3></center>
+							<center><p>Starting @Rs19999/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/d3.jpg" alt="deal3">
+						<div class="caption">
+							<center><h3>Sennheiser</h3></center>
+							<center><p>Upto 70% Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/d4.jpg" alt="deal4">
+						<div class="caption">
+							<center><h3>Mobile Cases</h3></center>
+							<center><p>Starting @Rs99/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/d5.jpg" alt="deal5">
+						<div class="caption">
+							<center><h3>iPhone 5</h3></center>
+							<center><p>10% Cashback</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Row ends-->
+			
+			<!--Row starts for thumbnail display-->
+			<div class="row ">
+				<div class="col-lg-2 col-sm-6 col-md-4" id="deal">
+					<div class="thumbnail">
+						<div class="caption">
+							<center><p>Best <br>of <br>Electronics<br> 2016</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">View All</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/b1.jpg" alt="best1">
+						<div class="caption">
+							<center><h3>Canon</h3></center>
+							<center><p>Starting at Rs24999/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/b2.jpeg" alt="best2">
+						<div class="caption">
+							<center><h3>JBL</h3></center>
+							<center><p>Upto 70% Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/b3.jpg" alt="best3">
+						<div class="caption">
+							<center><h3>iWatch 2</h3></center>
+							<center><p>20% Cashback</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/b4.jpeg" alt="best4">
+						<div class="caption">
+							<center><h3>SoundBot</h3></center>
+							<center><p>Upto 50% Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/b5.jpeg" alt="best5">
+						<div class="caption">
+							<center><h3>DELL Inspiron</h3></center>
+							<center><p>Starting @Rs17999/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Row ends-->
+
+			<!--Row starts for thumbnail display-->
+			<div class="row ">
+				<div class="col-lg-2 col-sm-6 col-md-4" id="deal">
+					<div class="thumbnail">
+						<div class="caption">
+							<center><p>Special <br>offers <br>on<br> Gaming</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">View All</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/g1.jpg" alt="game1">
+						<div class="caption">
+							<center><h3>AlienWare</h3></center>
+							<center><p>10% Cashback</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/g2.jpg" alt="game2">
+						<div class="caption">
+							<center><h3>PlayStation</h3></center>
+							<center><p>From Rs19999 onwards</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/g3.jpg" alt="deal3">
+						<div class="caption">
+							<center><h3>FIFA 16 PS2</h3></center>
+							<center><p>Rs299 Only</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/g4.jpg" alt="deal4">
+						<div class="caption">
+							<center><h3>Sony PSP</h3></center>
+							<center><p>Starting @Rs21999/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/g5.jpg" alt="deal5">
+						<div class="caption">
+							<center><h3>X-BOX</h3></center>
+							<center><p>Upto 40% Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Row ends-->
+
+			<!--Row starts for thumbnail display-->
+			<div class="row ">
+				<div class="col-lg-2 col-sm-6 col-md-4" id="deal">
+					<div class="thumbnail">
+						<div class="caption">
+							<center><p>You <br>May <br>also<br> Like</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">View All</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/l1.jpg" alt="like1">
+						<div class="caption">
+							<center><h3>iPad Air</h3></center>
+							<center><p>Bank Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/l2.jpeg" alt="like2">
+						<div class="caption">
+							<center><h3>Canvas 3</h3></center>
+							<center><p>From Rs9999 onwards</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/l3.jpeg" alt="like3">
+						<div class="caption">
+							<center><h3>Samsung J7</h3></center>
+							<center><p>Upto 7% Cashback</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/l4.jpg" alt="like4">
+						<div class="caption">
+							<center><h3>JBL Bluetooth</h3></center>
+							<center><p>Upto 12% Offer</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="images/l5.jpg" alt="like5">
+						<div class="caption">
+							<center><h3>MI PowerBank</h3></center>
+							<center><p>Starting @Rs799/-</p></center>
+							<center><a href="#" class="btn btn-primary" role="button">Buy Now</a></center>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Row ends-->
+
+		<!-- Footer Section Starts -->
+		<footer class="row footrow ">
+			<div class="col-lg-3 col-sm-3 col-md-3">
+				<ul class="foot">
+					<li><h4>HELP</h4></li>
+					<li><a href="#">Payments</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Cancellation</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-3 col-md-3">
+				<ul class="foot">
+					<li><h4>E-SHOP</h4></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Address</a></li>
+					<li><a href="#">Sell on E-shop</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-3 col-md-3">
+				<ul class="foot">
+					<li><h4>OTHERS</h4></li>
+					<li><a href="#">Track your order</a></li>
+					<li><a href="#">Stories</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms&Policies</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-3 col-md-3">
+				<ul class="foot">
+					<li><h4>JOIN US</h4></li>
+					<li><a href="#"><i class="fa fa-facebook ficon" aria-hidden="true"></i>  Facebook</a></li>
+					<li><a href="#"><i class="fa fa-twitter ficon" aria-hidden="true"></i> Twitter</a></li>
+					<li><a href="#"><i class="fa fa-google-plus ficon" aria-hidden="true"></i> Google+</a></li>
+					<li><a href="#"><i class="fa fa-instagram ficon" aria-hidden="true"></i> Instagram</a></li>
+					<li><a href="#"><i class="fa fa-youtube-play ficon" aria-hidden="true"></i> Youtube</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="col-lg-12 col-sm-12 col-md-12">
+				<ul class="foot-payment">
+					<h4>Payment Modes</h4>
+					<li><img src="images/f1.png" alt="pay1" ></li>
+					<li><img src="images/f2.jpg" alt="pay2" ></li>
+					<li><img src="images/f3.png" alt="pay3" ></li>
+					<li><img src="images/f4.png" alt="pay4" ></li>
+					<li><img src="images/f5.jpg" alt="pay5" ></li>
+					<li><img src="images/f6.jpg" alt="pay6" ></li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-sm-12 col-md-12" id="end">
+				<center><p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true" id="end1"></span></p></center>
+			</div>
+		</footer>
+		<!-- Footer ends-->
+	</body>
+	</html>

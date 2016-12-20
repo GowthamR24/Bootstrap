@@ -1,0 +1,239 @@
+body{
+	background: black;
+}
+
+.navbar{
+	background-color: dodgerblue;
+}
+
+#menu a{
+	color: white;
+}
+
+.page-header{
+	background: darkslategrey;
+	margin-top:-18px;
+	box-shadow: 0px;
+}
+
+.page-header h1{
+	color: white;
+	padding-top: 12px;
+	font-style: italic;
+	}
+
+.navbar-default{
+	border-color: black;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 24px;
+}
+
+
+#menu a:hover{
+	background: black;
+}
+
+#menu .active a{
+	background: black;
+}
+
+.dropdown-menu {
+	background-color: grey;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	background-color: black;
+}
+
+
+#mySlide{
+	height: 400px;
+	margin-top: 53px;
+}
+
+#slide1{
+	background:url(../images/slide1.jpg) top center no-repeat;
+	height: 400px;
+}
+
+#slide2{
+	background:url(../images/slide2.jpg) top center no-repeat;
+	height: 400px;
+}
+
+#slide3{
+	background:url(../images/slide3.jpg) top center no-repeat;
+	height: 400px;
+}
+
+#slide4{
+	background:url(../images/slide4.jpg) top center no-repeat;
+	height: 400px;
+}
+
+@media(min-width: 1200px){
+#mySlide{
+	height: 500px;
+	margin-top: 53px;
+}
+
+#slide1{
+	background:url(../images/slide1_large.jpg) top center no-repeat;
+	height: 500px;
+}
+
+#slide2{
+	background:url(../images/slide2_large.jpg) top center no-repeat;
+	height: 500px;
+}
+
+#slide3{
+	background:url(../images/slide3_large.jpg) top center no-repeat;
+	height: 500px;
+}
+
+
+#slide4{
+	background:url(../images/slide4_large.jpg) top center no-repeat;
+	height: 500px;
+}
+}
+@media(max-width: 768px){
+#mySlide{
+	height: 300px;
+	margin-top: 53px;
+}
+
+#slide1{
+	background:url(../images/slide1_small.jpg) top center no-repeat;
+	height: 300px;
+}
+
+#slide2{
+	background:url(../images/slide2_small.jpg) top center no-repeat;
+	height: 300px;
+}
+
+#slide3{
+	background:url(../images/slide3_small.jpg) top center no-repeat;
+	height: 300px;
+}
+
+#slide4{
+	background:url(../images/slide4_small.jpg) top center no-repeat;
+	height: 300px;
+}
+}
+
+.row{
+	margin-top: 2px;
+	border: 0px;
+	background: snow;
+}
+
+.tab-pane h4{
+	margin-top: 50px;
+}
+
+.caption p{
+	color: green;
+}
+
+.thumbnail{
+	margin-top: 15px;
+}
+
+.rate:hover{
+	color: gold;
+}
+
+#deal p{
+	color: black;
+	font-size: 32px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+}
+
+.ficon{
+	color:white;
+}
+
+.footrow{
+	background: black;
+}
+
+.foot{
+	list-style: none;
+}
+
+.foot li {
+	color: white;
+}
+
+.foot a{
+	color: #DCDCDC;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+.foot-payment{
+	list-style: none;
+}
+
+.foot-payment li{
+	display:inline;
+}
+
+.foot-payment h4{
+	color: white;
+}
+
+.pro{
+	margin-top: 52px;
+}
+
+.product a {
+	margin-top: 20px;
+	margin-bottom:0px;
+}
+
+#buy{
+	margin-left: -2px;
+}
+
+.product1{
+	margin-top: 20px;
+}
+
+.specs{
+	margin-top: 30px;
+}
+
+.specs p{
+	font-size: 14px;
+}
+
+.price{
+	font-size: 24px;
+}
+
+.input-group #delivery{
+	width: 200px;
+}
+
+#features button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#end p{
+	color: white;
+}
+
+#end1{
+	color: red;
+}
